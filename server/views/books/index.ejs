@@ -21,7 +21,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <!-- Template Row -->
+                <!-- Template -->
                 <% for (let count = 0; count < books.length; count++) { %>
                 <tr>
                   <td><%= books[count].Title %></td>
@@ -30,12 +30,12 @@
                   <td class="text-center"><%= books[count].Genre %></td>
 
                   <td class="text-center">
-                   <!-- A class success Edit button that will be in green colour -->
+                   
                     <a href="/books/<%= books[count]._id %>" class="btn btn-success"><i class="fa"></i> Edit</a>
                   </td>
 
                   <td class="text-center">
-                     <!-- A class danger Delete button that will confirm before deleting -->
+                     
                     <a href="/books/delete/<%= books[count]._id %>" class="btn btn-danger"><i class="fa"></i> Delete</a>
                  </td>
                 </tr>
